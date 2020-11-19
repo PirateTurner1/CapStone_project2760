@@ -195,7 +195,7 @@ function evalGuess() {
     } else if (gamerGuess < correctNumber && gamerGuess > 0) {
         feedFront.innerText = 'Too Low! Release the Kraken!'
     } else {
-        feedFront.innerText = 'Please choose a number\n between 1 and 15 \n and try again!'
+        feedFront.innerText = 'Please choose a number\n between 1 and 20 \n and try again!'
         totalGuesses -= 1
     }
     document.querySelector('#attempts').innerText = totalGuesses    
