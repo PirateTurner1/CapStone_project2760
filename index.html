@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final-Capstone Project</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 id="company"></h1>
+            <h2 id="slogan"></h2>
+        </header>
+
+        <main id="pageName">
+            <h1 id = "head1"></h1>
+            <br>
+            <h2 id = "head2"></h2>
+            <ul class = "objective">
+                <li>Using JavaScript to create, set values, and append elements to the DOM.</li>
+                <li>How to use proper conditional logic such as if/else, or switch statements.</li>
+                <li>Creating JavaScript functions that accept parameters and return values.</li>
+                <li>the use template literals to combine strings and embedded expressions.</li>
+                <li>Creative JavaScript objects with properties and methods.</li>
+                <li>the use of JavaScript Array methods to create, or append, or copy, or delete items from arrays.</li>
+                <li>Load an external JSON file or Fetch remote JSON data from an API and display the data.</li>
+            </ul>
+            
+            <h2>Instructions</h2>
+            <p id="instructions">In this game you get to try and guess a number between 2 and 12 using two dice in as few tries as possible.<br/>
+            you will be awarded a ribbon for your skills if you have the right number in the least amount of tries, so good luck! <br/>
+            if you would like to play again, all you have to do is refresh the page. be warned! the correct number will change. <br/> 
+            the fun does not stop there, you can play against a pirate opponent in this competition. The first person to the number or is highest wins.   </p>
+        
+            <h2 class = "player">Select Your Opponent!</h2>
+            <ul class = "pirates">
+                <li><a href = "#" id = "turner">William Turner</a></li>
+                <li><a href = "#" id = "sparrow">Jack Sparrow</a></li>
+                <li><a href = "#" id = "norrington">James Norrington</a></li>
+                <li><a href = "#" id = "barbarossa">Barbarossa</a></li>
+                <li><a href = "#" id = "davy_jones">Davy Jones</a></li>
+                <li><a href = "#" id = "blackbeard">Black Beard</a></li>
+                <li><a href = "#" id = "salazar">Armando Salazar</a></li>
+            </ul>
+            <br>
+            <h2 id = "pirateName"></h2>
+            <img id = "picture">
+            <br>
+            <div class = "p">
+                <!--<p>Name: <span id = "pirateName"></span></p>-->
+                <p>Ships Name: <span id = "shipName"></span></p>
+                <p>Number of Crew: <span id = "crewNumber"></span></p>
+                <p>Killed:<span id = "killed"></span></p>
+                <p>cursed: <span id = "cursed"></span></p>
+            </div>
+            <br>
+            <h3 id = "playing">Computer Ready!</h3>
+            <br>
+            <h2> Role the Dice! </h2>
+            <br>
+            <div class="articles">
+                <article class="a1">
+                    <h4>your Dice</h4>
+                    <div class="diceRow" >
+                        <img id="playerDice1" src="images/d1.png">
+                        <img id="playerDice2" src="images/d1.png">
+                        <!--<img id="playerDice3" src="images/d1.png">-->
+                        <br>
+                        <button id ="buttonId" onClick="throwDice()">Roll 'em!</button>
+                    </div>
+                </article>
+            
+                <article class="a2">
+                    <h4>Pirates Dice</h4>
+                    <div class="diceRow">
+                        <img id="pirateDice1" src="images/e1.png">
+                        <img id="pirateDice2" src="images/e1.png">
+                        <!--<img id="pirateDice3" src="images/e1.png">-->
+                    </div>
+                </article>
+                <article class="a3">
+                    <h4>Feedback</h4>
+                    <div id="feedback"></div>
+                </article>
+                <article class="a4">
+                    <h4>Award</h4>
+                    <div class="diceColumn">
+                        <img id="message" src="images/goodluck.gif" alt="Good Luck!"/>                     
+                    </div>
+                </article>
+            </div>
+            <br>
+            <p> Ok, Pirate!  if that was not enough or it did not work out so well for you, how about a quick guessing game then!</p>
+            <br>            
+            <br> 
+            <div class="articles">
+                <article class="a1">
+                    <h4>Guess my Number</h4>
+                    <div>
+                        <input id="guess" type="number" placeholder="number"/>
+                        <button id= "buttonId" onclick="evalGuess()">Guess</button>
+                    </div>
+                </article>
+                <article class="a2">
+                    <h4> Number of Tries</h4>
+                    <div id="attempts"></div>
+                </article>
+                <article class="a3">
+                    <h4>Guessing Feedback</h4>
+                    <div id="feedFront"></div>
+                </article>
+                <article class="a4">
+                    <h4>Guessing Award</h4>
+                    <div id="ribbon"></div>
+                </article>
+            </div>
+        </main>
+        <div class="keepOpen"></div>
+        <footer>
+            <p>&#64;UVU_DGM_2760 &#169; Austin Turner. </p>
+            <p>For educational purposes only by the "Pirates design, inc."</p>
+        </footer>
+        <script type="text/JavaScript" src="js/main.js"></script>
+    </div> 
+</body>
+</html>
