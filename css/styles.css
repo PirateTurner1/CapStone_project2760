@@ -1,0 +1,348 @@
+/* CSS reset */
+header, body, p, h1, h2, h3, h4, footer{
+    padding: 0; 
+    margin: 0;
+}
+  
+/*box model fix here*/
+*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  box-sizing: border-box; 
+}
+ 
+html{
+   background:rgb(231, 231, 231);
+   font-family: 'Merriweather Sans', sans-serif;
+   background-color: #c2946f;
+}
+
+div#wrapper{
+    margin-left:170px;
+    margin-right: 150px;
+    max-width: 1100px;
+    box-shadow: 0 0 20px #444;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 1080px;
+    height: 260px;
+    background-image: url("../images/onSetPirates-cropped.jpg");
+    background-repeat: no-repeat;
+    background-size: 1030px 260px; 
+}
+
+/* putting in the top header h1-h2*/
+#company {
+    color: rgb(255, 251, 0);
+    font-size: 3.25rem;
+    padding-top: 20px;
+    text-shadow: 3px 3px rgb(5, 5, 5);
+    text-indent: 20px;
+    margin: 0 170px 30px 10px;
+}
+
+#slogan {
+    color:rgb(255, 251, 0);
+    font-size: 2rem, ;
+    padding-top: 20px;
+    margin-left: 40px;
+    text-shadow: 3px 3px rgb(5, 5, 5);
+    text-indent: 5px;
+}
+
+/* main body stuff*/ 
+main, footer {
+    background-color:rgb(231, 231, 231);
+    clear:both;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: left;
+    color:#048000;
+    padding-top: 20px;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    color:#048000;
+    margin-top: 10px;
+    font-size: 26px;
+}
+
+.objective {
+    list-style-image: url("../images/check.png");
+    margin-bottom: 40px;
+}
+
+.player{
+    margin-top: 40px;
+}
+
+#pageName {
+    display: block;
+    height: 1650px;
+    background-color:rgb(231, 231, 231);
+    clear: both;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-bottom: 150px;
+}
+
+p {
+    margin-top: 12px;
+}
+
+.pirates {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 16px;
+    width: 925px;
+    max-height: 40px;
+    background-color: #00fc3f;
+    color: black;
+    border-radius: 10px; 
+    padding: 10px 0 10px 0;
+}
+
+.pirates a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-left: 2px solid rgb(231, 231, 231);
+    border-right: 2px solid rgb(231, 231, 231); 
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.pirates a:hover {
+    color: rgb(251, 255, 21);
+    background-color:#00fc3f;
+}
+
+#picture {
+    width: 350px;
+    height: 224px;
+    float:left;  
+}
+
+.p p {
+    float:left;
+    border: solid 1px rgb(36, 172, 2);
+    border-radius: 3rem;
+    padding: 7px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color:  #00fc3f;
+    margin-right: 280px;
+}
+
+.p p span {
+    padding-right: 20px;
+    padding-left: 5px;
+    margin-left: 5px;
+
+}
+
+h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    color:black;
+    margin-top: 200px;
+    margin-bottom: 5px;
+    font-size: 18px; 
+    width:60%;
+}
+
+.articles { 
+    display: flex;
+    flex-direction: row;
+}
+
+main article {
+    width: 30%;
+}
+
+main article div {
+    height: 160px;
+    background-color: #fff;
+    padding-top: 0px;
+    margin-bottom: 0 auto;
+}
+
+main article.a1 {
+    width: 195px;
+    background-color: rgb(163, 245, 163);
+    margin-bottom: 0 auto;  
+}
+
+main article.a1 div {
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+main article.a1 h4 {
+    margin-left:17px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+main article.a1 input {
+    border: 1px solid black;
+    width: 70%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 1rem;
+    padding-left: 5px;
+}
+
+main article.a1 button {
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(163, 245, 163);
+    width: 90px;
+    height: 25px;
+    font-size: 16px;
+    margin-left:5px; 
+    margin-top:5px; 
+}
+
+.diceRow {
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 197px;
+}
+
+#playerDice1, #playerDice2, #pirateDice1, #pirateDice2 { 
+    height: 70px;
+    width:70px;
+    padding: 5px;
+}
+
+main article.a2 {
+    width: 195px;
+    background-color: rgb(163, 245, 163);
+}
+
+article.a2 h4 {
+    margin-left:15px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 150px;
+}
+
+main article.a2 div {
+    text-align: center;
+    width: 195px;
+}
+
+main #attempts {
+    font-size: 4rem; 
+    color:black;
+    padding-right: 90px;
+    padding-top: 10px;
+}
+
+main article.a3 {
+    width: 35%;
+    background-color: rgb(163, 245, 163);
+}
+
+article.a3 h4 {
+    margin-left:15px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+main #feedback {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    color:black;
+}
+main #feedFront {
+    padding-top: 10px;
+    font-size: 1.5rem;
+    color:black;
+}
+
+main article.a4 {
+    width: 200px;
+    background-color: rgb(163, 245, 163);
+}
+
+article.a4 h4 {
+    margin-left:15px;
+    margin-right: 10px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.diceColumn {
+    align-content: center;
+    margin-right: 10px;
+    height: 160px;
+}
+
+img {
+    height: 175px;
+    width: 175px;
+    align-content: center;
+    padding: 1em;
+    margin-right: 10px;
+    height: 160px; 
+}
+
+main #message {
+    height: 160px;
+    width:190px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-bottom: 10px;
+}
+
+main #ribbon {
+    height: 160px;
+    width:185px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+div.keepOpen { 
+    clear: both;
+} 
+
+footer{
+    height: 100px;
+    background-color:#552d05;
+    font-size: 14px;
+    text-align: center;
+    max-width: 1920px;
+    padding: 20px;
+    color: white;
+}
