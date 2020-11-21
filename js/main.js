@@ -190,7 +190,7 @@ function evalGuess() {
     if (gamerGuess == correctNumber) {
         feedFront.innerText = 'You Win! now Get Off My SHIP!'
         giveAward()
-    } else if (gamerGuess > correctNumber && gamerGuess < 16) {
+    } else if (gamerGuess > correctNumber && gamerGuess < 21) {
         feedFront.innerText = 'Too High! Walk the Plank!'
     } else if (gamerGuess < correctNumber && gamerGuess > 0) {
         feedFront.innerText = 'Too Low! Release the Kraken!'
