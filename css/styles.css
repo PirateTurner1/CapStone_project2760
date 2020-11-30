@@ -106,7 +106,7 @@ p {
     justify-content: space-evenly;
     list-style: none;
     font-size: 16px;
-    width: 925px;
+    width: 947px;
     max-height: 40px;
     background-color: #00fc3f;
     color: black;
@@ -236,8 +236,8 @@ main article.a1 button {
 }
 
 #playerDice1, #playerDice2, #pirateDice1, #pirateDice2 { 
-    height: 70px;
-    width:70px;
+    height: 69px;
+    width:69px;
     padding: 5px;
 }
 
